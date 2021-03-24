@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"> <!-- Lien avec le fichier style.css -->
+        <script src="https://kit.fontawesome.com/4389809c4d.js" crossorigin="anonymous"></script>
+        <title>Reservia</title> <!-- Titre de la page -->
+    </head>
+
+    <body> <!-- Corps du code -->
+        <div id="entete"> <!-- 1er bloc, Entete ,logo et lien -->
+            <div class="entete__logo">
+                <img src="images/logo/Reservia.svg" alt="Logo de Reservia"> <!-- Lien bers l'image du logo -->
+                <a href="https://openclassrooms.com" class="respo">S'inscrire</a>
+            </div>
+            <div class="entete__lien">
+                <div class="lien__cards">
+                    <a href="#hebergement">Hébergement</a>
+                    <a href="#activites">Activités</a>
+                </div>
+
+                <div class="entete__inscrire">
+                    <a href="https://openclassrooms.com" class="desk">S'inscrire</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div id="bandeau"> <!-- 2eme bloc, barre de recherche et filtres -->
+        <div>
+            <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+            En plein centre ville ou en pleine nature
+        </div>
+
+        <div class="bandeau__recherche"> <!-- Div de la barre de recherche -->
+            <i class="fas fa-map-marker-alt" ></i> <!--Icone de marqueur -->
+            <input type="search" id="site-search" name="recherche" aria-label="Search through site content" value="Marseille,France"> <!--Barre de recherche -->
+            <button class="searchText">Rechercher</button> <!-- Bouton rechercher -->
+            <i class="fas fa-search" id="searchIcon"></i>
+        </div>
+
+        <div class="bandeau__filtres"> <!-- Filtres de recherche -->
+            <h4>Filtres</h4>
+            <div class="cardsFiltres">
+                <i class="fas fa-money-bill-wave iconFiltres"></i>
+                <p>Economique</p>
+            </div>
+
+            <div class="cardsFiltres">
+                <i class="fas fa-child iconFiltres"></i>
+                <p>Familial</p>
+            </div>
+
+            <div class="cardsFiltres">
+                <i class="fas fa-heart iconFiltres"></i>
+                <p>Romantique</p>
+            </div>
+
+            <div class="cardsFiltres">
+                <i class="fas fa-dog iconFiltres"></i>
+                <p>Animaux autorisés</p>
+            </div>
+
+        </div>
+
+        <div class="infoBandeau"> <!-- texte en fin de bloc -->
+            <i class="fas fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </div>
+
+
+
+    <div id="container"> <!-- 3eme bloc, Hebergement + Les plus populaires, composé de deux parties distincte-->
+        <div id="hebergement"> <!-- 1er sous-bloc, Hebergement -->
+            <h3>Hébergement à Marseille</h3>
+            <div class="cardsHebergement"> <!-- 1ere ligne d'élements -->
+
+                <!-- 1er Hôtel de la 1ere ligne -->
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="cards">
+                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Cannebière">
+                    <h4>Auberge de la Cannebière</h4>
+                    <p>Nuit à partir de 25€</p>
+                    <!-- Liste des images étoiles -->
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star" style="color: #F2F2F2"></i>
+                    </div>
+                </a>
+
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="cards"> <!-- 2eme Hôtel de la 1ere ligne -->
+                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Port">
+                    <h4>Hôtel du port</h4>
+                    <p>Nuit à partir de 52€</p>
+                    <!-- Liste des images étoiles -->
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </a>
+
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="cards"> <!-- 3eme Hôtel de la 1ere ligne -->
+                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Mouettes">
+                    <h4>Hôtel Les mouettes</h4>
+                    <p>Nuit à partir de 76€</p>
+                    <!-- Liste des images étoiles -->
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star" style="color: #F2F2F2"></i>
+                    </div>
+                </a>
+
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="cards"> <!-- 1er Hôtel de la 2eme ligne -->
+                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Mer"><br>
+                    <h4>Hôtel de la mer</h4>
+                    <p>Nuit à partir de 46€</p>
+                    <!-- Liste des images étoiles -->
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star" style="color: #F2F2F2"></i>
+                        <i class="fas fa-star" style="color: #F2F2F2"></i>
+                    </div>
+                </a>
+
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="cards"> <!-- 2eme Hôtel de la 2eme ligne -->
+                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Panier"><br>
+                    <h4>Auberge Le Panier</h4>
+                    <p>Nuit à partir de 23€</p>
+                    <!-- Liste des images étoiles -->
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star" style="color: #F2F2F2"></i>
+                    </div>
+                </a>
+
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="cards"> <!-- 3eme Hôtel de la 2eme ligne -->
+                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Amina"><br>
+                    <h4>Hôtel Chez Amina</h4>
+                    <p>Nuit à partir de 96€</p>
+                    <!-- Liste des images étoiles -->
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </a>
+
+            </div>
+            <h4>Afficher plus</h4>
+        </div>
+
+
+        <div id="populaire"> <!-- 2eme sous-bloc, Les plus populaires -->
+            <div class="cardsPopulaire">
+                <div class="infoPopulaire">
+                    <h3>Les plus populaires</h3>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="large">
+                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Solei du Matin">
+                    <h4>Hôtel Le soleil du matin</h4>
+                    <p>Nuit à partir de 128€</p><br>
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="large">
+                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Coeur de l'eau">
+                    <h4> Au coeur de l'eau Chambres d'hôtes</h4>
+                    <p>Nuit à partir de 71€</p><br>
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star" style="color: #F2F2F2"></i>
+                    </div>
+                </div>
+
+                <div class="large">
+                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Bleu et Blanc">
+                    <h4>Hôtel Tout bleu et blanc</h4>
+                    <p>Nuit à partir de 58€</p><br>
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star" style="color: #F2F2F2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="activites"> <!-- 4eme bloc, Activités-->
+        <div>
+            <h3>Activités à Marseille</h3>
+        </div>
+        <div class="activites__card">
+            <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="activites__card -big">
+                <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                <h4>Vieux Port</h4>
+            </a>
+
+
+            <div class="activites__card -small">
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="part__big">
+                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomègues">
+                    <h4>Fort de Pomègues</h4>
+                </a>
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="part__small">
+                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul">
+                    <h4>Îles du Frioul</h4>
+                </a>
+            </div>
+
+
+
+            <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="activites__card -big">
+                <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques">
+                <h4>Parc National des Calanques</h4>
+            </a>
+
+
+
+            <div class="activites__card -small">
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="part__med">
+                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                    <h4>Notre-Dame-de-la-Garde</h4>
+                </a>
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="part__med">
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp">
+                    <h4>Parc Longchamp</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer id="footer"> <!-- 5eme bloc, Pied de page-->
+        <div class="cardsFooter">
+            <div class="foot">
+                <h4>A propos</h4>
+                <a href="https://openclassrooms.com">Fonctionnement du site</a><br>
+                <a href="https://openclassrooms.com">Conditions générales de vente</a><br>
+                <a href="https://openclassrooms.com">Données et confidentialité</a>
+            </div>
+
+            <div class="foot">
+                <h4>Nos hébergements</h4>
+                <a href="https://openclassrooms.com">Charte qualité</a><br>
+                <a href="https://openclassrooms.com">Soumettre votre hôtel</a>
+            </div>
+
+            <div class="foot">
+                <h4>Assistance</h4>
+                <a href="https://openclassrooms.com">Centre d'aide</a><br>
+                <a href="https://openclassrooms.com">Nous contacter</a>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

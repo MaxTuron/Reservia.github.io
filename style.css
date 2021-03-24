@@ -6,6 +6,10 @@ html
     font-family: 'Raleway', sans-serif;
 }
 
+body
+{
+    margin: 0;
+}
 
 /*
 CSS des Div
@@ -97,7 +101,6 @@ CSS des Div
 {
     background-color: #F2F2F2;
     padding-bottom: 20px;
-    margin-bottom: 20px;
 }
 
 /*
@@ -432,10 +435,15 @@ Images de la div -big
 .-big img
 {
     width: 100%;
-    height: 90%;
+    height: 454px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
+}
+
+.-big h4
+{
+margin: 12px 0 0 0;
 }
 
 /*
@@ -455,14 +463,6 @@ Div activites__card -small
 /*
 Images de la div activites__card -small
  */
-.-small  img
-{
-    width: 100%;
-    height: 85%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    object-fit: cover;
-}
 
 /*
 Sous-partie des la div activites__card -small
@@ -489,6 +489,30 @@ Sous-partie des la div activites__card -small
     border: 1px solid #F2F2F2;
     text-decoration: none;
     color: black;
+}
+
+.part__small img
+{
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.part__med img
+{
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.part__big img
+{
+    height: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
 }
 
 .part__small
@@ -563,11 +587,49 @@ button
     border-bottom-right-radius : 10px;
 }
 
-/*
-Supprime la décoration des liens
- */
+@media screen and (max-width: 1024px) {
+    
+    body
+    {
+        width: 982px;
+    }
+    
+    #container {
+        width: 986px;
+    }
 
+    #hebergement
+    {
+        width: 65%;
+        height: 955px;
+    }
 
+    #populaire
+    {
+        width: 35%;
+        height: 955px;
+    }
+    
+    #footer
+    {
+        width: 982px;
+    }
+    
+    .foot
+    {
+        padding-right: 180px;
+    }
+
+    .cards
+    {
+        width: 228px;
+    }
+    
+    .large
+    {
+        width: 296px;
+    }
+}
 
 /*
 CSS Responsive

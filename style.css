@@ -503,7 +503,10 @@ Sous-partie des la div activites__card -small
     color: black;
 }
 
-
+.part__small h4, .part__med h4
+{
+    margin-top: 12px;
+}
 
 /*
 Mise en page des liens dans le pied de page

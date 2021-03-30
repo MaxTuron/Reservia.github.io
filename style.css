@@ -96,13 +96,6 @@ CSS des Div
     padding: 18px;
 }
 
-/*
-Balise i des 2 sous-parties de container
- */
-#hebergement i
-{
-    color: #0065FC;
-}
 
 /*
 Icone de recherche
@@ -118,11 +111,6 @@ Icone de recherche
 CSS des classes
  */
 
-
-.mobile
-{
-    display: none;
-}
 
 .header__lien
 {
@@ -523,6 +511,15 @@ Ajustement des liens
     color: black;
 }
 
+i.fa-star
+{
+    color: #0065FC;
+}
+
+i.vide
+{
+    color: #F2F2F2;
+}
 
 /*
 CSS des élements HTML
@@ -560,7 +557,12 @@ CSS responsive Tablette
     
     body
     {
-        width: 982px;
+        width: 98%;
+    }
+
+    .header
+    {
+        width: 100%;
     }
     
     #container {
@@ -581,7 +583,12 @@ CSS responsive Tablette
     
     #footer
     {
-        width: 988px;
+        width: 99.8%;
+    }
+    
+    .header__lien
+    {
+        margin-right: 36px;
     }
     
     .footer_column
@@ -673,15 +680,6 @@ CSS Responsive Mobile
     .header__logo img
     {
         padding-right: 140px;
-    }
-
-    .mobile
-    {
-        display: flex;
-        text-decoration: none;
-        padding-left: 24px;
-        font-weight: bold;
-        color: #0065FC;
     }
 
     .header__logo

@@ -16,6 +16,11 @@ section
     margin: 0 5% 0 5%;
 }
 
+ul
+{
+    margin-top: 0;
+}
+
 /*
 CSS des Div
  */
@@ -698,7 +703,7 @@ CSS Responsive Mobile
     .header__inscrire
     {
         position: absolute;
-        bottom: 778px;
+        bottom: 762px;
         right: 22px;
     }
 
@@ -706,6 +711,7 @@ CSS Responsive Mobile
     {
         display: flex;
         width: 375px;
+        padding-left: 0;
     }
 
     .lien__cards a

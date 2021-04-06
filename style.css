@@ -16,11 +16,6 @@ section
     margin: 0 5% 0 5%;
 }
 
-ul
-{
-    margin-top: 0;
-}
-
 /*
 CSS des Div
  */
@@ -98,7 +93,6 @@ CSS des Div
     display: flex;
     flex-direction: row;
     background-color: #F2F2F2;
-    padding: 18px;
 }
 
 
@@ -136,7 +130,7 @@ CSS des classes
     text-decoration: none;
     padding-top: 28px;
     border-top: 3px solid white;
-    width: 150px;
+    width: 100px;
 }
 
 .lien__cards a:hover
@@ -150,7 +144,6 @@ CSS des classes
 
 .header__inscrire
 {
-    padding-left: 24px;
     font-weight: bold;
 }
 
@@ -281,7 +274,7 @@ Classe générale des cartes
     margin-bottom: 50px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 2px 2px 10px grey;
     padding: 4px;
     text-decoration: none;
     color: black;
@@ -330,9 +323,9 @@ Images lié aux cartes
     margin: 0 38px 48px 0;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 2px 2px 10px grey;
     padding: 4px;
-    height: 140px;
+    height: 146px;
     width: 328px;
 }
 
@@ -343,7 +336,7 @@ Images lié aux cartes
 .large img
 {
     display: flex;
-    height: 138px;
+    height: 146px;
     width: 130px;
     border-top-left-radius: 10px;
     border-bottom-left-radius : 10px;
@@ -396,6 +389,7 @@ Div -big
     margin-bottom: 10px;
     text-decoration: none;
     color: black ;
+    box-shadow: 0 2px 4px -2px gray;
 }
 
 /*
@@ -446,6 +440,7 @@ Sous-partie des la div activites__card -small
     border: 1px solid #F2F2F2;
     text-decoration: none;
     color: black;
+    box-shadow: 0 2px 4px -2px gray;
 }
 
 .part__big
@@ -458,6 +453,7 @@ Sous-partie des la div activites__card -small
     border: 1px solid #F2F2F2;
     text-decoration: none;
     color: black;
+    box-shadow: 0 2px 4px -2px gray;
 }
 
 .part__small img
@@ -494,6 +490,7 @@ Sous-partie des la div activites__card -small
     border: 1px solid #F2F2F2;
     text-decoration: none;
     color: black;
+    box-shadow: 0 2px 4px -2px gray;
 }
 
 .part__small h4, .part__med h4
@@ -558,38 +555,35 @@ button
 CSS responsive Tablette
  */
 
-@media screen and (min-width: 376px) and (max-width: 1649px) {
-    
-    body
-    {
-        width: 98%;
-    }
+@media screen and (min-width: 1041px) and (max-width: 1649px) {
 
-    .header
-    {
+    body {
         width: 100%;
     }
-    
-    #container {
-        width: 986px;
+
+    .header {
+        width: 95%;
     }
 
-    #hebergement
-    {
+
+    #hebergement {
         width: 65%;
         height: 955px;
     }
 
-    #populaire
-    {
+    #populaire {
         width: 35%;
         height: 955px;
     }
-    
-    #footer
-    {
-        width: 99.8%;
+
+    #activites {
+        width: 95%;
     }
+
+    #footer {
+        width: 100%;
+    }
+
     
     .header__lien
     {
@@ -605,28 +599,271 @@ CSS responsive Tablette
     {
         width: 228px;
     }
-    
+
     .large
     {
+        height: 166px;
         width: 296px;
     }
+
+    .large img
+    {
+        height: 166px;
+    }
 }
+
+
+@media screen and (min-width: 630px) and (max-width: 1040px) {
+
+    body
+    {
+        width: 100%;
+    }
+
+    .header
+    {
+        width: 95%;
+    }
+
+    #container
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin:0 0 0 0;
+        width: auto;
+    }
+
+    #populaire
+    {
+        margin-left: 0;
+        height: auto;
+        border-radius: 0;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    #hebergement
+    {
+        height: auto;
+        background-color: white;
+    }
+
+    #activites
+    {
+        width: 97%;
+    }
+
+    #footer
+    {
+        width: 100%;
+        padding-bottom: 12px;
+    }
+
+    .header__lien
+    {
+        margin-right: 36px;
+    }
+    
+    .bandeau__filtres
+    {
+        display: block;
+        width: 208px;
+    }
+
+    .footer_column
+    {
+        padding-right: 76px;
+    }
+
+    .cards
+    {
+        width: 65%;
+    }
+
+    .cardsHebergement
+    {
+        justify-content: center;
+    }
+
+    .large
+    {
+        height: 166px;
+        width: 296px;
+    }
+
+    .large img
+    {
+        height: 166px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 630px) {
+
+    body
+    {
+        width: 100%;
+    }
+
+    .header
+    {
+        display: unset;
+        margin: 0;
+    }
+
+    #container
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin:0 0 0 0;
+        width: auto;
+    }
+
+    #populaire
+    {
+        margin-left: 0;
+        height: auto;
+        border-radius: 0;
+        align-items: center;
+        width: 100%;
+        padding : 0;
+    }
+
+    #hebergement
+    {
+        height: auto;
+        background-color: white;
+    }
+
+    #activites
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-color: white;
+        margin:0 0 0 24px;
+    }
+
+
+    .activites__card
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: 93%;
+        margin-right: 10px;
+    }
+
+    .activites__card a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    .-big, .-small , .part__med, .part__small, .part__big
+    {
+        width: 100%;
+        align-items: self-start;
+        border: 0;
+    }
+
+    .-small
+    {
+        height: 296px;
+    }
+
+    .-big, .part__med, .part__small, .part__big
+    {
+        box-shadow: 2px 2px 2px 2px #F2F2F2;
+    }
+
+    .-big h4, .part__med h4, .part__small h4, .part__big h4
+    {
+        margin: 5px 0 5px 0;
+    }
+
+    .part__med, .part__small, .part__big
+    {
+        height: 150px;
+    }
+
+    .-small img, .-big img
+    {
+        width: 100%;
+        height: 110px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    #footer
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header__lien
+    {
+        display: flex;
+        justify-content: center;
+        margin-right: 36px;
+    }
+    .header__logo
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bandeau__filtres
+    {
+        display: block;
+        width: 208px;
+    }
+
+    .footer_column
+    {
+        padding-right: 108px;
+    }
+
+    .cards
+    {
+        width: 80%;
+    }
+
+    .cardsHebergement
+    {
+        justify-content: center;
+    }
+
+    .large
+    {
+        height: 166px;
+        width: 296px;
+    }
+    
+    .large img
+    {
+        height: 166px;
+    }
+}
+
 
 /*
 CSS Responsive Mobile
  */
 
 @media screen and (max-width: 375px) {
-    
-    .body
-    {
-        width: 362px;
-    }
+
     .header
     {
         display: flex;
         flex-direction: column;
         margin: 0;
+        width: 100%;
     }
 
     #bandeau
@@ -641,6 +878,7 @@ CSS Responsive Mobile
         display: flex;
         flex-direction: column-reverse;
         margin:0 0 0 0;
+        width: auto;
     }
 
     #populaire
@@ -671,13 +909,11 @@ CSS Responsive Mobile
     {
         display: flex;
         flex-direction: column;
-        width: 332px;
+        width: 100%;
     }
 
     .header__logo
     {
-        display: flex;
-        align-items: center;
         font-weight: bold;
         color: #0065FC;
     }
@@ -692,38 +928,19 @@ CSS Responsive Mobile
         margin-left: -114px;
     }
 
-    .header__lien
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
-        width: 375px;
-    }
-
     .header__inscrire
     {
         position: absolute;
-        bottom: 762px;
+        bottom: 774px;
         right: 22px;
     }
-
-    .lien__cards
-    {
-        display: flex;
-        width: 375px;
-        padding-left: 0;
-    }
-
+    
     .lien__cards a
     {
-        display: flex;
-        justify-content: center;
-        color: black;
-        text-decoration: none;
         padding:0 0 10px 0;
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
-        width: inherit;
+        width: 188px;
     }
 
     .lien__cards a:hover
@@ -785,13 +1002,14 @@ CSS Responsive Mobile
 
     .cardsHebergement
     {
-        width: 305px;
+        width: 114%;
     }
 
     .cardsHebergement a
     {
         text-decoration: none;
         color: black;
+
     }
 
     .cardsPopulaire
@@ -805,19 +1023,20 @@ CSS Responsive Mobile
     
     .large
     {
-        width: 305px;
+        height: 148px;
+        width: 91%;
     }
 
     .large img
     {
-        height: 138px;
+        height: 148px;
         width: 120px;
     }
 
     .footer_column
     {
         padding-right: 0;
-        padding-left: 0;
+        padding-left: 10px;
     }
 
     .cards
@@ -843,7 +1062,7 @@ CSS Responsive Mobile
         flex-direction: column;
         align-items: flex-start;
         height: auto;
-        width: 305px;
+        width: 93%;
         margin-right: 10px;
     }
 

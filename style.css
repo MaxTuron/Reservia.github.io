@@ -389,7 +389,7 @@ Div -big
     margin-bottom: 10px;
     text-decoration: none;
     color: black ;
-    box-shadow: 0 2px 4px -2px gray;
+    box-shadow: 0 1px 4px -2px gray;
 }
 
 /*
@@ -440,7 +440,7 @@ Sous-partie des la div activites__card -small
     border: 1px solid #F2F2F2;
     text-decoration: none;
     color: black;
-    box-shadow: 0 2px 4px -2px gray;
+    box-shadow: 0 1px 4px -2px gray;
 }
 
 .part__big
@@ -453,7 +453,7 @@ Sous-partie des la div activites__card -small
     border: 1px solid #F2F2F2;
     text-decoration: none;
     color: black;
-    box-shadow: 0 2px 4px -2px gray;
+    box-shadow: 0 1px 4px -2px gray;
 }
 
 .part__small img
@@ -490,7 +490,7 @@ Sous-partie des la div activites__card -small
     border: 1px solid #F2F2F2;
     text-decoration: none;
     color: black;
-    box-shadow: 0 2px 4px -2px gray;
+    box-shadow: 0 1px 4px -2px gray;
 }
 
 .part__small h4, .part__med h4

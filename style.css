@@ -856,33 +856,29 @@ CSS responsive Tablette
 CSS Responsive Mobile
  */
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 356px) and (max-width: 375px) {
 
-    .header
-    {
+    .header {
         display: flex;
         flex-direction: column;
         margin: 0;
         width: 100%;
     }
 
-    #bandeau
-    {
+    #bandeau {
         padding-left: 12px;
         margin: 0;
     }
 
 
-    #container
-    {
+    #container {
         display: flex;
         flex-direction: column-reverse;
-        margin:0 0 0 0;
+        margin: 0 0 0 0;
         width: auto;
     }
 
-    #populaire
-    {
+    #populaire {
         margin-left: 0;
         height: auto;
         width: 100%;
@@ -890,82 +886,70 @@ CSS Responsive Mobile
         padding: 0 0 0 0;
     }
 
-    #hebergement
-    {
+    #hebergement {
         height: auto;
         background-color: white;
     }
 
-    #activites
-    {
+    #activites {
         display: flex;
         flex-direction: column;
         height: auto;
         background-color: white;
-        margin:0 0 0 24px;
+        margin: 0 0 0 24px;
     }
 
-    #footer
-    {
+    #footer {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    .header__logo
-    {
+    .header__logo {
         font-weight: bold;
         color: #0065FC;
     }
-    
-    .header__logo img
-    {
+
+    .header__logo img {
         padding-right: 140px;
     }
 
-    .header__logo
-    {
+    .header__logo {
         margin-left: -114px;
     }
 
-    .header__inscrire
-    {
+    .header__inscrire {
         position: absolute;
         top: 22px;
         right: 22px;
     }
-    
-    .lien__cards a
-    {
-        padding:0 0 10px 0;
+
+    .lien__cards a {
+        padding: 0 0 10px 0;
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
         width: 178px;
     }
 
-    .lien__cards a:hover
-    {
+    .lien__cards a:hover {
         color: #0065FC;
-        padding:0 0 10px 0;
+        padding: 0 0 10px 0;
         border-top: none;
         border-bottom: 3px solid #0065FC;
     }
 
-    .bandeau__recherche
-    {
+    .bandeau__recherche {
         display: flex;
         justify-content: space-between;
         width: 95%;
         height: 52px;
     }
 
-    .bandeau__recherche input
-    {
+    .bandeau__recherche input {
         font-weight: bold;
     }
 
-    .bandeau__recherche i
-    {
+    .bandeau__recherche i {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -973,92 +957,78 @@ CSS Responsive Mobile
         height: 52px;
     }
 
-    #searchIcon
-    {
+    #searchIcon {
         display: flex;
         background-color: #0065FC;
         color: white;
-        border-radius:10px;
+        border-radius: 10px;
     }
 
-    .searchText
-    {
+    .searchText {
         display: none;
     }
 
-    .bandeau__filtres
-    {
+    .bandeau__filtres {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 16px;
         width: 300px;
     }
 
-    .bandeau__filtres h4
-    {
+    .bandeau__filtres h4 {
         width: 100%;
         margin-bottom: 0;
     }
 
-    .cardsHebergement
-    {
+    .cardsHebergement {
         width: 114%;
     }
 
-    .cardsHebergement a
-    {
+    .cardsHebergement a {
         text-decoration: none;
         color: black;
 
     }
 
-    .cardsPopulaire
-    {
+    .cardsPopulaire {
         display: flex;
         flex-direction: column;
         width: auto;
         height: auto;
         padding-left: 24px;
     }
-    
-    .large
-    {
+
+    .large {
         height: 148px;
         width: 91%;
     }
 
-    .large img
-    {
+    .large img {
         height: 148px;
         width: 120px;
     }
 
-    .footer_column
-    {
+    .footer_column {
         padding-right: 0;
         padding-left: 10px;
     }
 
-    .cards
-    {
+    .cards {
         height: auto;
         width: 100%;
         margin-right: 0;
     }
 
-    .cards p
-    {
+    .cards p {
         margin: 0;
         padding-bottom: 12px;
     }
 
-    .cards h4
-    {
-       margin: 0;
+    .cards h4 {
+        margin: 0;
     }
 
-    .activites__card
-    {
+    .activites__card {
         flex-direction: column;
         align-items: flex-start;
         height: auto;
@@ -1066,45 +1036,292 @@ CSS Responsive Mobile
         margin-right: 10px;
     }
 
-    .activites__card a
-    {
+    .activites__card a {
         text-decoration: none;
         color: black;
     }
 
-    .-big, .-small , .part__med, .part__small, .part__big
-    {
+    .-big, .-small, .part__med, .part__small, .part__big {
         width: 100%;
         align-items: self-start;
         border: 0;
     }
-    
-    .-small
-    {
+
+    .-small {
         height: 296px;
     }
 
-    .-big, .part__med, .part__small, .part__big
-    {
+    .-big, .part__med, .part__small, .part__big {
         box-shadow: 2px 2px 2px 2px #F2F2F2;
     }
 
-    .-big h4, .part__med h4, .part__small h4, .part__big h4
-    {
+    .-big h4, .part__med h4, .part__small h4, .part__big h4 {
         margin: 5px 0 5px 0;
     }
 
-    .part__med, .part__small, .part__big
-    {
+    .part__med, .part__small, .part__big {
         height: 150px;
     }
 
-    .-small img, .-big img
-    {
+    .-small img, .-big img {
         width: 100%;
         height: 110px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
 }
+
+
+@media screen and (max-width: 355px) {
+
+        .header
+        {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            width: 100%;
+        }
+
+        #bandeau
+        {
+            padding-left: 12px;
+            margin: 0;
+        }
+
+
+        #container
+        {
+            display: flex;
+            flex-direction: column-reverse;
+            margin:0 0 0 0;
+            width: auto;
+        }
+
+        #populaire
+        {
+            margin-left: 0;
+            height: auto;
+            width: 100%;
+            border-radius: 0;
+            padding: 0 0 0 0;
+        }
+
+        #hebergement
+        {
+            height: auto;
+            background-color: white;
+        }
+
+        #activites
+        {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            background-color: white;
+            margin:0 0 0 24px;
+        }
+
+        #footer
+        {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .header__logo
+        {
+            font-weight: bold;
+            color: #0065FC;
+        }
+
+        .header__logo img
+        {
+            padding-right: 140px;
+        }
+
+        .header__logo
+        {
+            margin-left: -114px;
+        }
+
+        .header__inscrire
+        {
+            position: absolute;
+            top: 22px;
+            right: 22px;
+        }
+
+        .lien__cards a
+        {
+            padding:0 0 10px 0;
+            border-top: none;
+            border-bottom: 3px solid #F2F2F2;
+            width: 158px;
+        }
+
+        .lien__cards a:hover
+        {
+            color: #0065FC;
+            padding:0 0 10px 0;
+            border-top: none;
+            border-bottom: 3px solid #0065FC;
+        }
+
+        .bandeau__recherche
+        {
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            height: 52px;
+        }
+
+        .bandeau__recherche input
+        {
+            font-weight: bold;
+        }
+
+        .bandeau__recherche i
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 52px;
+            height: 52px;
+        }
+
+        #searchIcon
+        {
+            display: flex;
+            background-color: #0065FC;
+            color: white;
+            border-radius:10px;
+        }
+
+        .searchText
+        {
+            display: none;
+        }
+
+        .bandeau__filtres
+        {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+            width: 300px;
+        }
+
+        .bandeau__filtres h4
+        {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .cardsHebergement
+        {
+            width: 114%;
+        }
+
+        .cardsHebergement a
+        {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .cardsPopulaire
+        {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+            padding-left: 24px;
+        }
+
+        .large
+        {
+            height: 166px;
+            width: 94%;
+        }
+
+        .large img
+        {
+            height: 166px;
+            width: 120px;
+        }
+
+        .footer_column
+        {
+            padding-right: 0;
+            padding-left: 10px;
+        }
+
+        .cards
+        {
+            height: auto;
+            width: 100%;
+            margin-right: 0;
+        }
+
+        .cards p
+        {
+            margin: 0;
+            padding-bottom: 12px;
+        }
+
+        .cards h4
+        {
+            margin: 0;
+        }
+
+        .activites__card
+        {
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            width: 93%;
+            margin-right: 10px;
+        }
+
+        .activites__card a
+        {
+            text-decoration: none;
+            color: black;
+        }
+
+        .-big, .-small , .part__med, .part__small, .part__big
+        {
+            width: 100%;
+            align-items: self-start;
+            border: 0;
+        }
+
+        .-small
+        {
+            height: 296px;
+        }
+
+        .-big, .part__med, .part__small, .part__big
+        {
+            box-shadow: 2px 2px 2px 2px #F2F2F2;
+        }
+
+        .-big h4, .part__med h4, .part__small h4, .part__big h4
+        {
+            margin: 5px 0 5px 0;
+        }
+
+        .part__med, .part__small, .part__big
+        {
+            height: 150px;
+        }
+
+        .-small img, .-big img
+        {
+            width: 100%;
+            height: 110px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+}
+
 

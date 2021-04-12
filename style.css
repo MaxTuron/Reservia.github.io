@@ -885,7 +885,7 @@ CSS Responsive Mobile
     {
         margin-left: 0;
         height: auto;
-        width: 375px;
+        width: 100%;
         border-radius: 0;
         padding: 0 0 0 0;
     }
@@ -940,7 +940,7 @@ CSS Responsive Mobile
         padding:0 0 10px 0;
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
-        width: 188px;
+        width: 178px;
     }
 
     .lien__cards a:hover
@@ -955,7 +955,7 @@ CSS Responsive Mobile
     {
         display: flex;
         justify-content: space-between;
-        width: 352px;
+        width: 95%;
         height: 52px;
     }
 
@@ -991,7 +991,7 @@ CSS Responsive Mobile
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 16px;
-        width: 362px;
+        width: 300px;
     }
 
     .bandeau__filtres h4

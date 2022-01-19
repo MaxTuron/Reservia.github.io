@@ -9,6 +9,7 @@ html
 body
 {
     margin: 0;
+    background-color: red;
 }
 
 section
@@ -584,12 +585,12 @@ CSS responsive Tablette
         width: 100%;
     }
 
-    
+
     .header__lien
     {
         margin-right: 36px;
     }
-    
+
     .footer_column
     {
         padding-right: 132px;
@@ -666,7 +667,7 @@ CSS responsive Tablette
     {
         margin-right: 36px;
     }
-    
+
     .bandeau__filtres
     {
         display: block;
@@ -844,7 +845,7 @@ CSS responsive Tablette
         height: 166px;
         width: 296px;
     }
-    
+
     .large img
     {
         height: 166px;
